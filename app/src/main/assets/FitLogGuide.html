@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FitLog App Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 1rem;
+        padding: 0;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      /* Media queries for different screen sizes */
+      @media screen and (max-width: 768px) {
+        .container {
+          padding: 0 10px;
+        }
+      }
+
+      .image-container {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .content {
+        display: none;
+      }
+
+      .button {
+        background-color: #4caf50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>FitLog App Guide</h1>
+      </div>
+      <div>
+        <p>
+          The FitLog app is a logging app that helps track your gym workouts.
+          Choose from a plethora of exercises to vary your workouts.
+        </p>
+        <br />
+        <h2>Home Screen</h2>
+        <div class="image-container">
+          <img src="images/HomeScreen.png" alt="FitLog App Home Screen" />
+        </div>
+        <p>
+          This home screen is where you can view your workouts that you have
+          added for the day. From this page, you can also add some new workouts
+          by clicking on the blue circle. Furthermore, you can enter the
+          settings and the guide.
+        </p>
+        <p>Click on these buttons to get more information.</p>
+      </div>
+      <button onclick="toggleContent(0)" class="button">Adding a Workout</button>
+      <div id="content-0" class="content">
+        <br />
+        <h2>Adding a Workout</h2>
+        <h3>Muscle Group Page</h3>
+        <div class="image-container">
+          <img src="images/MuscleGroups.png" alt="FitLog App Add Workout" />
+        </div>
+        <p>
+          When you click on the blue circle, you will be taken to the muscle
+          groups page. This is where you can view all of the possible muscle
+          groups that you can add exercises for. When you click on one of these
+          muscle groups, you will be taken to the exercises page.
+        </p>
+        <br />
+        <h3>Exercises Page</h3>
+        <div class="image-container">
+          <img src="images/Exercises.png" alt="FitLog App Exercises" />
+        </div>
+        <p>
+          On the exercises page, you can view all of the possible exercises that
+          you can add to your workout. When you click on one of these exercises,
+          you will be taken to a page where you can add such exercise.
+        </p>
+        <br />
+        <h3>Adding an Exercise Page</h3>
+        <div class="image-container">
+          <img src="images/AddExercise.png" alt="FitLog App Add Exercise" />
+        </div>
+        <p>
+          On this page, you can add the exercise to your workout. You can alter
+          the weight and reps for the exercise, whilst also adding the number of
+          sets that you want to do. When you enter the weight and reps, clicking
+          the "Save" button will add a set to the exercise.
+        </p>
+        <p>
+          When you are finished, you can go back to the home page by going back.
+        </p>
+      </div>
+      <button onclick="toggleContent(1)" class="button">Settings</button>
+      <div id="content-1" class="content">
+        <br />
+        <h2>Settings</h2>
+        <div class="image-container">
+          <img src="images/SettingsPage.png" alt="FitLog App Settings" />
+        </div>
+        <p>
+          On the settings page, you can change the notifications settings. Either
+          they are on or off. When they are on, you will be notified at 12:00pm
+          every day.
+        </p>
+      </div>
+      <button onclick="toggleContent(2)" class="button">Share</button>
+      <div id="content-2" class="content">
+        <br />
+        <h2>Share</h2>
+        <div class="image-container">
+          <img src="images/SharePage.png" alt="FitLog App Settings" />
+        </div>
+        <p>
+          When you click the share button, the share options will appear, where you 
+          can share with other users that you have worked out today.
+        </p>
+      </div>
+      <button onclick="toggleContent(3)" class="button">Guide</button>
+      <div id="content-3" class="content">
+        <br />
+        <h2>Guide</h2>
+        <p>
+          Clicking the guide button will show this page!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

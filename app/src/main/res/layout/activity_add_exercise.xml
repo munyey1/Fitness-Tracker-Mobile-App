@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExerciseActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/appbar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/txtExerciseEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise Name"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/appbar"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/txtExerciseEdit"
+        android:id="@+id/txtWeight"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:id="@+id/editWeight">
+
+        <Button
+            android:id="@+id/weightDecreaseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/editTxtWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="8"
+            android:text="0.0"
+            android:inputType="numberDecimal"
+            android:hint="@string/get_weight"/>
+
+        <Button
+            android:id="@+id/weightIncreaseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reps"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/editWeight" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtReps"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:id="@+id/editReps">
+
+        <Button
+            android:id="@+id/repsDecreaseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/editTxtReps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="8"
+            android:text="0"
+            android:inputType="number"
+            android:hint="@string/get_reps"/>
+
+        <Button
+            android:id="@+id/repsIncreaseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editReps"
+        android:text="Save"
+        android:ems="10"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/saveBtn"/>
+
+    <!--TODO make a clear button that enables when one of the sets are selected -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/saveBtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/exerciseListRecView"/>
+
+</RelativeLayout>

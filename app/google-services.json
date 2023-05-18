@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "359005906211",
+    "project_id": "fitlog-bb089",
+    "storage_bucket": "fitlog-bb089.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359005906211:android:2e12cec7236a89d884d896",
+        "android_client_info": {
+          "package_name": "com.example.fitlog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359005906211-bfsugnqo1nfml085lp062eagptnm805d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA4tauJjnG4yMY6Z9igA6w-M8Bd14xB9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359005906211-bfsugnqo1nfml085lp062eagptnm805d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
